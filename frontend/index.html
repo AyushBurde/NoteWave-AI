@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndianMeet AI - Meeting Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇮🇳 IndianMeet AI</h1>
+            <p class="tagline">Meeting Assistant That Understands How Indians Talk</p>
+        </header>
+
+        <main>
+            <!-- NEW: Real-Time Recording Section -->
+<div class="card recording-section">
+    <h2>🎙️ Record Meeting Live</h2>
+    <p class="hint">Perfect for when you forget to record! Click to start recording your meeting.</p>
+    
+    <div class="recording-controls">
+        <button id="startRecordBtn" class="btn-record">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="3" fill="currentColor"></circle>
+            </svg>
+            Start Recording
+        </button>
+        
+        <button id="stopRecordBtn" class="btn-stop" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                <rect x="6" y="6" width="12" height="12"></rect>
+            </svg>
+            Stop Recording
+        </button>
+        
+        <div id="recordingTimer" class="recording-timer" style="display: none;">
+            <span class="pulse-dot"></span>
+            <span id="timerText">00:00</span>
+        </div>
+    </div>
+    
+    <div id="recordingWave" class="audio-wave" style="display: none;">
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+    </div>
+</div>
+
+<div class="divider">
+    <span>OR</span>
+</div>
+            <!-- Upload Section -->
+            <div class="card upload-section">
+                <h2>Upload Your Meeting Recording</h2>
+                <p class="hint">Supports: MP3, WAV, M4A, WebM (Max 25MB)</p>
+                
+                <div class="upload-area" id="uploadArea">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <p>Drop audio file here or click to browse</p>
+                    <input type="file" id="audioFile" accept="audio/*" hidden>
+                </div>
+
+                <button id="processBtn" class="btn-primary" disabled>
+                    Process Meeting
+                </button>
+            </div>
+
+            <!-- Loading Section -->
+            <div class="card loading-section" id="loadingSection" style="display: none;">
+                <div class="loader"></div>
+                <p id="loadingText">Uploading audio...</p>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="resultsSection" style="display: none;">
+                
+                <!-- Summary Card -->
+                <div class="card result-card">
+                    <h2>📝 Meeting Summary</h2>
+                    <div id="summaryContent" class="content-box"></div>
+                </div>
+
+                <!-- Action Items Card -->
+                <div class="card result-card">
+                    <h2>✅ Action Items</h2>
+                    <div id="actionItemsContent" class="content-box"></div>
+                </div>
+
+                <!-- Participants Card -->
+                <div class="card result-card">
+                    <h2>👥 Participants</h2>
+                    <div id="participantsContent" class="content-box"></div>
+                </div>
+
+                <!-- Key Decisions Card -->
+                <div class="card result-card">
+                    <h2>🎯 Key Decisions</h2>
+                    <div id="decisionsContent" class="content-box"></div>
+                </div>
+
+                <!-- Transcript Card -->
+                <div class="card result-card">
+                    <h2>📄 Full Transcript</h2>
+                    <div id="transcriptContent" class="content-box transcript-box"></div>
+                </div>
+
+                <!-- Export Buttons -->
+                <div class="export-section">
+                    <button id="exportPdfBtn" class="btn-secondary">Export as PDF</button>
+                    <button id="exportTxtBtn" class="btn-secondary">Export as Text</button>
+                    <button id="newMeetingBtn" class="btn-primary">Process Another Meeting</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built for Hack This Fall 2025 🚀 | Understands Indian English, Hinglish & Indian Names</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

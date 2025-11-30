@@ -1,0 +1,28 @@
+﻿{
+  "manifest_version": 3,
+  "name": "IndianMeet AI",
+  "version": "0.1.0",
+  "description": "Meeting notes for Google Meet and Zoom",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*",
+    "https://*.zoom.us/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*",
+        "https://*.zoom.us/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
