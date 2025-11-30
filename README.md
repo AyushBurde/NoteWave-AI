@@ -134,30 +134,17 @@ Sign up: https://console.groq.com/
 Create API key
 Free tier: Unlimited requests (rate limited)
 
-PROJECT STRUCTURE
-indianmeet-ai/
-├── backend/
-│   ├── main.py              # FastAPI server
-│   ├── transcription.py     # Deepgram integration
-│   ├── processing.py        # Groq AI processing
-│   └── requirements.txt     # Python dependencies
-├── frontend/
-│   ├── index.html           # Main UI
-│   ├── style.css            # Styling
-│   └── script.js            # Frontend logic
-├── chrome-extension/
-│   ├── manifest.json        # Extension config
-│   ├── popup.html           # Extension popup
-│   ├── popup.js             # Popup logic
-│   └── content.js           # Inject into Meet/Zoom
-├── uploads/                 # Temp audio storage
-├── .env                     # API keys (not in repo)
-└── README.md
 
 👥 Team
+
 Built with ❤️ for Hack This Fall 2025 - Milestone Edition
+
 Developer: [Ayush Burde]
+
 Contact: [workayu01@gmail.com]
+
 GitHub: [github.com/AyushBurde]
+
 LinkedIn: [https://www.linkedin.com/in/ayush-burde1/]
+
 
