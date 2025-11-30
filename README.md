@@ -27,11 +27,17 @@ IndianMeet AI transcribes:
 
 ✨ Our Solution
 NoteWave-AI is a meeting assistant specifically trained for Indian business contexts. It:
+
 ✅ Understands Indian English accents (Mumbai, Delhi, Bangalore, Hyderabad)
+
 ✅ Recognizes Hinglish (Hindi words mixed with English)
+
 ✅ Gets Indian names right (Rajesh, Priya, Amit, Sneha, Arjun)
+
 ✅ Completely FREE to use
+
 ✅ Privacy-first (your data, your control)
+
 Features
 🎙️ Real-Time Recording
 
