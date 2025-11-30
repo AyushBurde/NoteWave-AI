@@ -3,10 +3,15 @@ NoteWave-AI - A meeting assistant for Indians
 Every remote team faces this:
 
 😰 Someone forgets to record the meeting
+
 📝 Nobody wants to take notes during discussions
+
 🤦‍♂️ Existing tools butcher Indian names and accents
+
 💸 Premium tools like Otter.ai are expensive
+
 🗣️ They don't understand Hinglish (Hindi + English mix)
+
 
 Real scenario:
 
