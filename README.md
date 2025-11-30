@@ -105,8 +105,10 @@ pip install -r backend/requirements.txt
 
 # 4. Set up environment variables
 # Create .env file in root directory
+
 # Add your API keys:
 DEEPGRAM_API_KEY=your_deepgram_key_here
+
 GROQ_API_KEY=your_groq_key_here
 
 # 5. Start backend
