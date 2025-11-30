@@ -123,13 +123,18 @@ DEEPGRAM_API_KEY=your_deepgram_key_here
 GROQ_API_KEY=your_groq_key_here
 
 # 5. Start backend
+
 cd backend
+
 python main.py
+
 # Backend runs on http://localhost:8000
 
 # 6. Start frontend (new terminal)
 cd frontend
+
 python -m http.server 3000
+
 # Frontend runs on http://localhost:3000
 
 Get Free API Keys
